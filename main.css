@@ -1,0 +1,116 @@
+:root {
+    --main-color: rgba(0, 0, 0, 0.87);
+    --secondary-color: rgba(0, 0, 0, 0.15);
+
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.navbar{
+    display: block;
+    width: 100%;
+    height: 20px;
+
+}
+.navbar-wrapper{
+    align-items: center;
+    display: flex;
+    float: right;
+    justify-content: space-between;
+    width: 300px;
+    padding: 20px;
+
+}
+.navbar-wrapper > a {
+    text-decoration: none;
+    color: var(--main-color);
+   
+
+}
+.navbar-wrapper > a:hover {
+    text-decoration: underline;
+   
+
+}
+.navbar-profile {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    cursor: pointer;
+}
+.navbar-menu {
+    width: 30px;
+    height: 30px;
+    color: var(--main-color);
+    cursor: pointer;
+    border-radius: 50%;
+}
+.navbar-menu:hover {
+    box-shadow: 0 0 1px 3px var(--secondary-color);
+    background-color: var(--secondary-color);
+}
+main {
+    margin-top: 10%;
+    width: 100%;
+    height: 100%;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.google-logo
+{
+    width: 300px;
+}
+.search 
+{
+    border: 1px solid var(--secondary-color);
+    width: 35%;
+    min-width: 40vv;
+
+    border-radius: 30px;
+    display: flex;
+  align-items: center;
+  padding: 5px 15px;
+}
+.search > input{
+    border: none;
+    width: 90%;
+    outline: none;
+    padding: 0 10px;
+
+}
+.search:hover
+{
+box-shadow: 0 0 4px 2px var(--secondary-color);
+}
+.search > img {
+    height: 30px;
+    width: 30px;
+}
+.buttons {
+    margin-top: 15px;
+}
+.buttons >button {
+    border-radius: 5px;
+    font-size: 15px;
+    border: none;
+    padding: 15px;
+    margin: 10px;
+}
+.main>small {
+    margin-top: 10px;
+
+}
+.small>a {
+text-decoration: none;
+color: blue;
+}
+.small>a:hover {
+text-decoration: underline;
+}
